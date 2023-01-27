@@ -1,23 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import NavbarContainer from './components/navbarContainer';
+import MenuContainer from './components/menuContainer';
+import MenuOption from './components/menuOption';
+import CartWidget from './components/cart';
+import image from '../src/img/cart-widget.png'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavbarContainer className="navbar" img={"Aqui va el logo"}>
+        <MenuContainer title={"Aqui va el menu"} >
+          <MenuOption liName={"Inicio"}/>
+          <MenuOption liName={"Conocenos"}/>
+          <MenuOption liName={"Productos"}/>
+          <MenuOption liName={"Contacto"}/>
+        </MenuContainer>
+        <CartWidget amount={"1"} className="cart" src={{backgroundImage: image}}/>
+      </NavbarContainer>
+        
+      
     </div>
   );
 }
