@@ -1,4 +1,14 @@
 .navbar{
-    font-size: 2rem;
-    
+    font-size: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 20vh;
+    background-color: rgb(254, 146, 107);
+}
+.navbar>p{
+    font-size: 3rem;
+    color: rgb(160, 12, 12);
+    padding: 1rem;
 }

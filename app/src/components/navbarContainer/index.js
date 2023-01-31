@@ -1,9 +1,10 @@
 import React from 'react'
+import './styles.css';
 
-function NavbarContainer({img, children}) {
+function NavbarContainer({logo, children}) {
     return (
-    <nav>
-        <p>{img}</p> 
+    <nav className='navbar'>
+        <p>{logo}</p> 
         {children}
     </nav>
     )

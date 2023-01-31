@@ -1,10 +1,10 @@
 import React from 'react'
+import './styles.css'
 
-function MenuContainer({title, children}) {
+function MenuContainer({children}) {
     return (
-        <div>
-            <ul>
-                <p>{title}</p>
+        <div className='menuContainer'>
+            <ul className='menuList'>
                 {children}
             </ul>
         </div>

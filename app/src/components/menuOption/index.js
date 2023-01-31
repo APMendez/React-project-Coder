@@ -1,9 +1,10 @@
 import React from 'react'
+import './styles.css'
 
 function MenuOption({liName}) {
     return (
-        <li>
-            <p>{liName}</p>
+        <li className='menuOption'>
+            <a href='#'>{liName}</a>
         </li>
     )
 }
