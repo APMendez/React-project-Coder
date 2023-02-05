@@ -5,6 +5,7 @@ import MenuOption from './components/menuOption';
 import CartWidget from './components/cart';
 import image from '../src/img/cart-widget.png';
 import ItemList from './components/itemList';
+import MediaCard from './components/card';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
       </NavbarContainer>
       
       <ItemList text={"¡Proximamente podrás ver todos nuestros productos!"}>
+        <MediaCard/>
       </ItemList>
     </div>
   );
