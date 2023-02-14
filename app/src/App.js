@@ -1,30 +1,34 @@
+import React from 'react';
 import './App.css';
-import NavbarContainer from './components/navbarContainer';
-import MenuContainer from './components/menuContainer';
-import MenuOption from './components/menuOption';
-import CartWidget from './components/cart';
+import {BrowserRouter, Routes, Route} from "react-router-dom";
 import image from '../src/img/cart-widget.png';
-import ItemListContainer from './components/itemListContainer';
-import MediaCard from './components/card';
+
+//COMPONENTS
+import CartWidget from './components/cart';
+import NavbarContainer from './components/navbarContainer';
+
+//PAGES
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
 
 
 function App() {
   return (
-    <div className="App">
-      <NavbarContainer logo={"APICAL"}>
-        <MenuContainer>
-          <MenuOption liName={"Inicio"}/>
-          <MenuOption liName={"Conocenos"}/>
-          <MenuOption liName={"Productos"}/>
-          <MenuOption liName={"Contacto"}/>
-        </MenuContainer>
-        <CartWidget amount={"0"} style={{backgroundImage: image}}/>
-      </NavbarContainer>
-      
-      <ItemListContainer text={"¡Proximamente podrás ver todos nuestros productos!"}>
-        <MediaCard/>
-      </ItemListContainer>
+    <BrowserRouter>
+      <div className="App">
+        <NavbarContainer logo={"APICAL"}>
+          <CartWidget amount={"0"} style={{backgroundImage: image}}/>
+        </NavbarContainer>
+        
+        <Routes>
+          <Route path="/" element={<Home/>} />
+          <Route path="/about" element={<About/>} />
+          <Route path="/contact" element={<Contact/>} />
+        </Routes>  
     </div>
+    </BrowserRouter>
+    
   );
 }
 
