@@ -8,9 +8,9 @@ import CartWidget from './components/cart';
 import NavbarContainer from './components/navbarContainer';
 
 //PAGES
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
+import Inicio from "./pages/Inicio";
+import Conocenos from "./pages/Conocenos";
+import Contacto from "./pages/Contacto";
 
 
 function App() {
@@ -22,9 +22,9 @@ function App() {
         </NavbarContainer>
         
         <Routes>
-          <Route path="/" element={<Home/>} />
-          <Route path="/about" element={<About/>} />
-          <Route path="/contact" element={<Contact/>} />
+          <Route path="/" element={<Inicio/>} />
+          <Route path="/conocenos" element={<Conocenos/>} />
+          <Route path="/contacto" element={<Contacto/>} />
         </Routes>  
     </div>
     </BrowserRouter>

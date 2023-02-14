@@ -1,9 +1,0 @@
-.menuContainer{
-    width: 70%;
-}
-.menuList{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    
-}

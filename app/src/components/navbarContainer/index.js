@@ -2,46 +2,32 @@ import React from "react";
 import "./styles.css";
 import { NavLink } from "react-router-dom";
 
-//COMPONENTS
-
-/*function NavbarContainer({ logo, children }) {
-    return (
-        <>
-        <nav className="navbar">
-            <p> {logo} </p> {children}{" "}
-            <MenuContainer>
-            <MenuOption liName={"Inicio"} /> <MenuOption liName={"Conocenos"} />{" "}
-            <MenuOption liName={"Productos"} /> <MenuOption liName={"Contacto"} />{" "}
-            </MenuContainer>{" "}
-        </nav>{" "}
-        </>
-    );
-}*/
-
 const NavbarContainer = ({ logo, children }) => {
     return (
         <nav className="navbar">
-            <p> {logo} </p>{" "}
+            <NavLink to="/" className="logo">
+                {logo}    
+            </NavLink>
             <ul className="List-ul">
                 <NavLink
                 to="/"
                 className="NavLink"
                 >
-                Home{" "}
-                </NavLink>{" "}
+                Inicio
+                </NavLink>
                 <NavLink
-                to="/about"
+                to="/conocenos"
                 className="NavLink"
                 >
-                About{" "}
-                </NavLink>{" "}
+                Conocenos
+                </NavLink>
                 <NavLink
-                to="/contact"
+                to="/contacto"
                 className="NavLink"
                 >
-                Contact{" "}
-                </NavLink>{" "}
-            </ul>{" "}
+                Contacto
+                </NavLink>
+            </ul>
             {children}
         </nav>
     );

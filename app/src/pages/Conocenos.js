@@ -1,9 +1,9 @@
 import React from 'react';
 
-const About = () => {
+const Conocenos = () => {
     return (
         <div>
-            <h1>About</h1>
+            <h1>¿Quienes somos?</h1>
             <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis
             sagittis tellus. Quisque congue, ligula a elementum finibus, nisi neque
@@ -56,4 +56,4 @@ const About = () => {
     );
 };
 
-export default About;
+export default Conocenos;
