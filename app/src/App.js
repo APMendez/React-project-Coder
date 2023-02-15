@@ -7,10 +7,12 @@ import image from '../src/img/cart-widget.png';
 import CartWidget from './components/cart';
 import NavbarContainer from './components/navbarContainer';
 
+
 //PAGES
 import Inicio from "./pages/Inicio";
 import Conocenos from "./pages/Conocenos";
 import Contacto from "./pages/Contacto";
+import PlantDetail from './pages/plantDetail';
 
 
 function App() {
@@ -25,6 +27,7 @@ function App() {
           <Route path="/" element={<Inicio/>} />
           <Route path="/conocenos" element={<Conocenos/>} />
           <Route path="/contacto" element={<Contacto/>} />
+          <Route path='/detail/:id' element={<PlantDetail/>} />
         </Routes>  
     </div>
     </BrowserRouter>

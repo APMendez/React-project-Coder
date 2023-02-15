@@ -1,9 +1,11 @@
 import React from "react"
 import "./styles.css";
-const PlantCard = () => {
+import image from "../../img/begonia-maculata.jpg.webp"
+const PlantCard = ({prods}) => {
     return(
-        <div>
-            <p>Soy una planta</p>
+        <div className="plantCardDiv">
+            <img src={image} alt="imagen descriptiva" />
+            <h1><span>Nombre: </span>{prods.title}</h1>
         </div>
     );
 };

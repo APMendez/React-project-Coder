@@ -3,7 +3,7 @@ import React from 'react';
 const Conocenos = () => {
     return (
         <div>
-            <h1>¿Quienes somos?</h1>
+            <h1 style={{color:"rgb(160, 12, 12)"}}>¿Quienes somos?</h1>
             <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis
             sagittis tellus. Quisque congue, ligula a elementum finibus, nisi neque
