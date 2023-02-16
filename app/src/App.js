@@ -13,6 +13,8 @@ import Inicio from "./pages/Inicio";
 import Conocenos from "./pages/Conocenos";
 import Contacto from "./pages/Contacto";
 import PlantDetail from './pages/plantDetail';
+import Cart from './pages/Cart.js';
+
 
 
 function App() {
@@ -28,6 +30,7 @@ function App() {
           <Route path="/conocenos" element={<Conocenos/>} />
           <Route path="/contacto" element={<Contacto/>} />
           <Route path='/detail/:id' element={<PlantDetail/>} />
+          <Route path='/cart' element={<Cart/>}/>
         </Routes>  
     </div>
     </BrowserRouter>

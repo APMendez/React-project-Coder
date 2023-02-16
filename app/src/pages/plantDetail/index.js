@@ -8,8 +8,12 @@ const PlantDetail = () => {
     let { id } = useParams();
 
     useEffect(() => {
-        fetch(`https://jsonplaceholder.typicode.com/posts/${id}`)
-        .then((response) => setProd(response.prods));  
+        const getData=async()=>{
+            const data = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`);
+            const dataJson = await data.json();
+            setProd(dataJson);
+        }
+        getData(); 
     }, [id]);
 
     return (
@@ -23,3 +27,4 @@ const PlantDetail = () => {
 };
 
 export default PlantDetail;
+
